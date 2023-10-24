@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="Accordion.css">
+   
+
+</head>
+
+<body>
+    <div class="accordion">
+        <h2 class="accordion-title">Frequently Asked Questions</h2>
+
+        <div class="content-container">
+            <div class="question">What is the return Policy</div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eaque adipisci consequatur, itaque illo at ipsam. Ut quo eveniet repellendus praesentium quasi. Vero itaque qui, officiis debitis commodi dolorum inventore!</div>
+        </div>
+
+        <div class="content-container">
+            <div class="question">What is the return Policy</div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eaque adipisci consequatur, itaque illo at ipsam. Ut quo eveniet repellendus praesentium quasi. Vero itaque qui, officiis debitis commodi dolorum inventore!</div>
+        </div>
+        <div class="content-container">
+            <div class="question">What is the return Policy</div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eaque adipisci consequatur, itaque illo at ipsam. Ut quo eveniet repellendus praesentium quasi. Vero itaque qui, officiis debitis commodi dolorum inventore!</div>
+        </div>
+    </div>
+
+
+
+
+
+    <script >
+        // Accordion Project 3******
+
+const accordion = document.getElementsByClassName('content-container');
+
+for (i = 0; i < accordion.length; i++) {
+
+    accordion[i].addEventListener('click', function() {
+        this.classList.toggle('active');
+    })
+
+};
+    </script>
+</body>
+
+</html>
